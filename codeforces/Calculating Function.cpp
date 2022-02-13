@@ -1,21 +1,13 @@
-#include<bits/stdc++.h>
+#include <cmath>
+#include <iostream>
 using namespace std;
 
-int Calculating( long long n)
+int main()
 {
-    long long a;
-    if(n % 2 == 0)
-        return a = n / 2;
-    else
-        return a = ((n + 1) / 2) * (-1);
-}
-
-int main ()
-{
-
-    long long n;
-    cin>>n;
-    auto res = Calculating(n);
-    cout<<res<<endl;
+    long long n, a;
+    cin >> n;
+    if(n % 2 == 0) a = n / 2;
+    else a = ((n + 1) / 2) * (-1);
+    cout << a << endl;
     return 0;
 }
